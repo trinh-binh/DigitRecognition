@@ -11,7 +11,6 @@ def load_data():
 def create_data():
     tr_d,va_d,te_d=load_data()
     training_input=[np.reshape(x,(784,1)) for x in tr_d[0]]
-    #training_input=[x for x in tr_d[0]]
     training_result=[change_result_fomat(y) for y in tr_d[1]]
     training_data=zip(training_input,training_result)
     validation_input=[np.reshape(x,(784,1)) for x in va_d[0]]
