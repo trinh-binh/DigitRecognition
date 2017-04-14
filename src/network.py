@@ -75,7 +75,6 @@ class Network(object):
             if x==y:
                 s=s+1;
         return s
-        #return sum(int(x == y) for (x, y) in test_results)
     def error(self, y, out):
         return (y-out)
 
